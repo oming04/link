@@ -8,25 +8,22 @@ from distutils.util import strtobool
 from dotenv import load_dotenv
 from logging.handlers import RotatingFileHandler
 
-load_dotenv("config.env")
+APP_ID = 7350916
+API_HASH = 776fec9b07afa7d5cc74425852c9835b
+OWNER = pemilik
+OWNER_ID = 1906416113
+ADMINS = 1906416113
+PROTECT_CONTENT = True
 
-# Bot token dari @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+TG_BOT_TOKEN = 6254040709:AAERUmgAbV7pL4whbvHvjfvwsRIcoLQrXXs
+FORCE_SUB_1 = -1001612071223
+FORCE_SUB_2 = -1001604179732
+FORCE_SUB_3 = -1001221035558
+FORCE_SUB_4 = -1001805966180
+FORCE_SUB_5 = 0
+FORCE_SUB_6 = 0
+CHANNEL_ID = -1001878058090
 
-# API ID Anda dari my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", ""))
-
-# API Hash Anda dari my.telegram.org
-API_HASH = os.environ.get("API_HASH", "")
-
-# ID Channel Database
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
-
-# OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", ""))
-
-# NAMA OWNER
-OWNER = os.environ.get("OWNER", "mrismanaziz")
 
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
@@ -42,13 +39,6 @@ PROTECT_CONTENT = strtobool(os.environ.get("PROTECT_CONTENT", "False"))
 CHANNEL = os.environ.get("CHANNEL", "Lunatic0de")
 GROUP = os.environ.get("GROUP", "SharingUserbot")
 
-# ID dari Channel Atau Group Untuk Wajib Subscribenya
-FORCE_SUB_1 = int(os.environ.get("FORCE_SUB_1", "0"))
-FORCE_SUB_2 = int(os.environ.get("FORCE_SUB_2", "0"))
-FORCE_SUB_3 = int(os.environ.get("FORCE_SUB_3", "0"))
-FORCE_SUB_4 = int(os.environ.get("FORCE_SUB_4", "0"))
-FORCE_SUB_5 = int(os.environ.get("FORCE_SUB_5", "0"))
-FORCE_SUB_6 = int(os.environ.get("FORCE_SUB_6", "0"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
